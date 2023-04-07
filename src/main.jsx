@@ -12,6 +12,7 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import OrderReview from './components/OrderReview/OrderReview';
+import TShirt from './components/tShirt/tShirt';
 
 const router = createBrowserRouter([
   {
