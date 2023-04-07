@@ -4,12 +4,13 @@ import './ResultCart.css'
 import { XMarkIcon } from '@heroicons/react/24/solid'
 
 
-const ResultCart = ({ cart, handelRemoveToCart }) => {
+const ResultCart = ({ cart, handelRemoveToCart, price}) => {
      let massage;
      cart.length === 0 ? massage = <p className='text-danger'>Please add some product</p> : massage = <p className='text-success'>Thank you so much</p>;
      return (
           <div className='p-3 rounded'>
                <h2 className={`text-center p-4 rounded ${cart.length !==0? 'bg-secondary':'bg-light'}`}>Order Summary: {cart.length}</h2>
+               <h2 className={`text-center p-3 rounded ${cart.length !==0 &&'text-danger'}`}>Total Price: ${price}</h2>
                <div className='text-center'>
                     {massage}
                </div>
@@ -17,7 +18,7 @@ const ResultCart = ({ cart, handelRemoveToCart }) => {
                     cart.map(shirt => <p className='text-center'
                          key={shirt._id}>
                          {shirt.name}
-                         <Button onClick={() => handelRemoveToCart(shirt._id)} variant="light">
+                         <Button onClick={() => handelRemoveToCart(shirt)} variant="light">
                               <XMarkIcon className='icon' />
                          </Button>
                     </p>)

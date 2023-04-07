@@ -10,6 +10,7 @@ const Home = () => {
      const tShirtsData = useLoaderData();
 
      const [cart, setCart] = useState([]);
+     const [prices, setPrices] = useState(0);
      // cart add start
      const handleAddToCart = (tShirt) => {
           const exists = cart.find(ts => ts._id === tShirt._id);
@@ -20,14 +21,23 @@ const Home = () => {
           else{
                const newCart = [...cart, tShirt]
                setCart(newCart);
-          }
-     }
-     // cart add end 
 
+               const totalPrices = prices + tShirt.price;
+               setPrices(totalPrices)
+          }   
+     }
+     
+     // cart add end 
+ 
      // cart remove start 
-     const handelRemoveToCart = (id) =>{
-          const remaining = cart.filter(ts => ts._id !== id);
+     const handelRemoveToCart = (shirt) =>{
+          const {_id, price} = shirt;
+          const remaining = cart.filter(ts => ts._id !== _id);
           setCart(remaining)
+
+          const TotalPrice = prices - price;
+          setPrices(TotalPrice)
+          
      }
      // cart remove end 
 
@@ -40,6 +50,7 @@ const Home = () => {
                                    key={tShirt._id}
                                    tShirt={tShirt}
                                    handleAddToCart={handleAddToCart}
+                                   // price = {prices}
                               ></Shirt>)
                          }
                     </div>
@@ -48,6 +59,7 @@ const Home = () => {
                     <ResultCart 
                     cart={cart}
                     handelRemoveToCart={handelRemoveToCart}
+                    price={prices}
                     ></ResultCart>
                </div>
                <ToastContainer></ToastContainer>
