@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -12,7 +11,6 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import OrderReview from './components/OrderReview/OrderReview';
-import TShirt from './components/tShirt/tShirt';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path:'*',
+        element: <h1 className='text-center'>404</h1>,
       },
     ]
   },

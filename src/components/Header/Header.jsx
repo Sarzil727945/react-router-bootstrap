@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Header = () => {
      return (
@@ -20,10 +21,10 @@ const Header = () => {
                                    style={{ maxHeight: '100px' }}
                                    navbarScroll
                               >
-                                   <Link className='text-dark navStyle mx-3 ' to="/">Home</Link>
-                                   <Link className='text-dark navStyle mx-3' to="/about">About</Link>
-                                   <Link className='text-dark navStyle mx-3' to="/order">Order Review</Link>
-                                   <Link className='text-dark navStyle mx-3' to="/contact">Contact</Link>
+                                   <ActiveLink className="text-decoration-none" to="/"><span className='text-dark mx-3 navStyle text-decoration-none'>Home</span></ActiveLink>
+                                   <ActiveLink to="/about"><span className='text-dark mx-3 navStyle'>About</span></ActiveLink>
+                                   <ActiveLink to="/order"><span className='text-dark mx-3 navStyle '>Order Review</span></ActiveLink>
+                                   <ActiveLink to="/contact"><span className='text-dark mx-3 navStyle'>Contact</span></ActiveLink>
                               </Nav>
                               <Form className="d-flex">
                                    <Form.Control
