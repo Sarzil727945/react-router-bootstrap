@@ -1,7 +1,9 @@
 import React from 'react';
 import './Footer.css'
 import ActiveLink from '../ActiveLink/ActiveLink';
-import { HomeIcon, EnvelopeIcon, PhoneIcon} from '@heroicons/react/24/solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { HomeIcon, EnvelopeIcon, PhoneIcon, } from '@heroicons/react/24/solid'
 
 const Footer = () => {
      return (
@@ -26,12 +28,12 @@ const Footer = () => {
                                              </li>
                                              <li>
                                                   <p className='d-flex align-content-center'>
-                                                       <EnvelopeIcon className='icon text-light'/>
+                                                       <EnvelopeIcon className='icon text-light' />
                                                        <span className="text-light ms-2">
                                                             sarzilmuntaha@gmail.com</span></p>
                                              </li>
                                              <li>
-                                                  <p className='d-flex align-content-center'><PhoneIcon className='icon text-light'/> <span className="text-light ms-2">
+                                                  <p className='d-flex align-content-center'><PhoneIcon className='icon text-light' /> <span className="text-light ms-2">
                                                        01893254443</span></p>
                                              </li>
                                         </ul>
@@ -73,30 +75,30 @@ const Footer = () => {
                                         <h4 className=" text-info mt-4">Follow us</h4>
                                         <div className=" d-flex mt-4">
                                              <div className=" mr-1 sa">
-                                                  <div className="text-bg-info sakm">
-                                                       <a href="#">
-
+                                                  <div className="followUs">
+                                                       <a href="https://www.facebook.com/smsarzil.muntaha" target='_blank'>
+                                                            <FontAwesomeIcon icon={faHome} />
                                                        </a>
                                                   </div>
                                              </div>
                                              <div className="sa mx-1">
-                                                  <div className="text-bg-info sakm">
-                                                       <a href="https://www.facebook.com/smsarzil.muntaha">
-                                                            <i className="fa-brands fa-facebook-f text-light"></i>
+                                                  <div className="followUs">
+                                                       <a href="https://www.instagram.com/" target='_blank'>
+                                                             <FontAwesomeIcon icon={faHome} />
                                                        </a>
                                                   </div>
                                              </div>
                                              <div className="sa mx-1">
-                                                  <div className="text-bg-info sakm">
-                                                       <a href="https://www.youtube.com/channel/UCJOmN86g6tWuxer1_J5wuaQ">
-                                                            <i className="fa-brands fa-youtube text-light"></i>
+                                                  <div className="followUs">
+                                                       <a href="https://www.youtube.com/channel/UCJOmN86g6tWuxer1_J5wuaQ" target='_blank'>
+                                                            <FontAwesomeIcon icon={faHome} />
                                                        </a>
                                                   </div>
                                              </div>
                                              <div className="sa mx-1">
-                                                  <div className="text-bg-info sakm">
-                                                       <a href="#">
-                                                            <i className="fa-brands fa-google text-light"> </i>
+                                                  <div className="followUs">
+                                                       <a href="https://www.instagram.com/">
+                                                            <FontAwesomeIcon icon={faHome} />
                                                        </a>
                                                   </div>
                                              </div>

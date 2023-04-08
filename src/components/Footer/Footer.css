@@ -8,15 +8,15 @@
 .icon:hover{
  color: rgb(237, 64, 64) !important;
 }
- .sakm{
-     border-radius: 50%;
- }
+.followUs a{
+ color: aliceblue;
+}
  .sa {
      width: 50px;
      text-align: center;
      font-size: 30px;
  }
- .sa i:hover{
+ .sa a:hover{
      color: #e73e3e !important;
 
  }

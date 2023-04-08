@@ -12,7 +12,7 @@ const Header = () => {
           <div className='fixed-top'>
                <Navbar bg="light" expand="lg" className='p-3 mb-2'>
                     <Container fluid className='container'>
-                         <Navbar.Brand href="#" className='fs-4'>Navbar scroll</Navbar.Brand>
+                         <Navbar.Brand href="#" className='fs-4'><img className='smImg' src="../../../public/sm.jpg" alt="" /></Navbar.Brand>
                          <Navbar.Toggle aria-controls="navbarScroll" />
                          <Navbar.Collapse id="navbarScroll">
                               <Nav
