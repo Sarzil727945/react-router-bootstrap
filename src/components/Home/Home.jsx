@@ -42,8 +42,8 @@ const Home = () => {
      // cart remove end 
 
      return (
-          <div className='row mx-lg-3'>
-               <div className='col-lg-9'>
+          <div className='row mx-lg-3 mt-5 pt-2'>
+               <div className='col-lg-9 mt-5'>
                     <div className='row'>
                          {
                               tShirtsData.map(tShirt => <Shirt
@@ -55,7 +55,7 @@ const Home = () => {
                          }
                     </div>
                </div>
-               <div className='col-lg-3 mt-3'>
+               <div className='col-lg-3 mt-3 mt-lg-5'>
                     <ResultCart 
                     cart={cart}
                     handelRemoveToCart={handelRemoveToCart}

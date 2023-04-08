@@ -10,6 +10,7 @@ import Display from './components/Display/Display';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
+import News from './components/News/News';
 import OrderReview from './components/OrderReview/OrderReview';
 
 const router = createBrowserRouter([
@@ -31,12 +32,16 @@ const router = createBrowserRouter([
         element: <OrderReview></OrderReview>,
       },
       {
+        path: "/news",
+        element: <News></News>,
+      },
+      {
         path: "/contact",
         element: <Contact></Contact>,
       },
       {
         path:'*',
-        element: <h1 className='text-center'>404</h1>,
+        element: <h1 className='text-center mt-5 pt-5'>404</h1>,
       },
     ]
   },
