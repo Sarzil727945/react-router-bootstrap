@@ -1,9 +1,10 @@
 import React from 'react';
 import './Footer.css'
 import ActiveLink from '../ActiveLink/ActiveLink';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { HomeIcon, EnvelopeIcon, PhoneIcon, } from '@heroicons/react/24/solid'
+import {BsFacebook} from 'react-icons/bs';
+import {AiFillYoutube, AiFillInstagram} from 'react-icons/ai';
+import {SiGmail} from 'react-icons/si';
+import { HomeIcon, EnvelopeIcon, PhoneIcon,} from '@heroicons/react/24/solid'
 
 const Footer = () => {
      return (
@@ -74,31 +75,32 @@ const Footer = () => {
                                         </form>
                                         <h4 className=" text-info mt-4">Follow us</h4>
                                         <div className=" d-flex mt-4">
-                                             <div className=" mr-1 sa">
+                                             <div className="sa">
                                                   <div className="followUs">
                                                        <a href="https://www.facebook.com/smsarzil.muntaha" target='_blank'>
-                                                            <FontAwesomeIcon icon={faHome} />
+                                                           <BsFacebook/>
+          
                                                        </a>
                                                   </div>
                                              </div>
-                                             <div className="sa mx-1">
+                                             <div className="sa">
                                                   <div className="followUs">
                                                        <a href="https://www.instagram.com/" target='_blank'>
-                                                             <FontAwesomeIcon icon={faHome} />
+                                                          <AiFillInstagram/>  
                                                        </a>
                                                   </div>
                                              </div>
-                                             <div className="sa mx-1">
+                                             <div className="sa">
                                                   <div className="followUs">
                                                        <a href="https://www.youtube.com/channel/UCJOmN86g6tWuxer1_J5wuaQ" target='_blank'>
-                                                            <FontAwesomeIcon icon={faHome} />
+                                                            <AiFillYoutube/>
                                                        </a>
                                                   </div>
                                              </div>
-                                             <div className="sa mx-1">
+                                             <div className="sa ">
                                                   <div className="followUs">
-                                                       <a href="https://www.instagram.com/">
-                                                            <FontAwesomeIcon icon={faHome} />
+                                                       <a href="#">
+                                                          <SiGmail/> 
                                                        </a>
                                                   </div>
                                              </div>

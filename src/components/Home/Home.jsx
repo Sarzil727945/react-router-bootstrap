@@ -26,7 +26,6 @@ const Home = () => {
                setPrices(totalPrices)
           }   
      }
-     
      // cart add end 
  
      // cart remove start 
